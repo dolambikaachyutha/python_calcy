@@ -1,1 +1,96 @@
 # python_calcy
+a=int(input("whats a:\n"))
+operator=input("Enter operator:\n")
+b=int(input("whats b:\n"))
+def addition(a,b):
+    return a+b
+def subtraction(a,b):
+    return a-b
+def multiplication(a,b):
+    return a*b
+def division(a,b):
+    if b==0:
+      f="ZeroDivisionError"
+      return f
+    else:
+      return a/b  
+def floordivision(a,b):
+  if b==0:
+    f="ZeroDivisionError"
+    return f
+  else:  
+    return a//b
+def modulardivision(a,b):
+  if b==0:
+    f="ZeroDivisionError"
+    return f
+  else:  
+    return a%b
+def power(a,b):
+    return a**b
+def bitwiseor(a,b):
+    return a|b
+def bitwiseand(a,b):
+    return a&b
+def bitwisexor(a,b):
+    return a^b
+def bitwisenota(a):
+    return ~a
+def bitwisenotb(b):
+    return ~b    
+def leftshift(a,b):
+    return a<<b
+def rightshift(a,b):
+    return a>>b
+def logicalor(a,b):
+    return a or b
+def logicaland(a,b):
+    return a and b
+def percentage(a,b):
+    if b==0:
+     f="ZeroDivisionError"
+     return f
+    else:  
+     return (a/b)*100
+def minimum(a,b):
+    return min(a,b)
+def maximum(a,b):
+    return max(a,b)
+if operator=="+":
+  print(addition(a,b))
+elif operator=="-":
+    print(subtraction(a,b))
+elif operator=="*":
+    print(multiplication(a,b))
+elif operator=="/":
+    print(division(a,b))
+elif operator=="//":
+    print(floordivision(a,b))
+elif operator=="%":
+    print(modulardivision(a,b))
+elif operator=="**":
+    print(power(a,b))     
+elif operator=="|":
+    print(bitwiseor(a,b))
+elif operator=="&":
+    print(bitwiseand(a,b))
+elif operator=="~":
+    print(bitwisenota(a),bitwisenotb(b))
+elif operator=="<<":
+    print(leftshift(a,b))
+elif operator==">>":
+    print(rightshift(a,b))
+elif operator=="or":
+    print(logicalor(a,b))
+elif operator=="and":
+    print(logicaland(a,b))
+elif operator=="^":
+    print(bitwisexor(a,b))
+elif operator=="percent":
+    print(percentage(a,b))    
+elif operator=="min":
+    print(minimum(a,b))
+elif operator=="max":
+    print(maximum(a,b))
+else:
+    print("invalid operator")
